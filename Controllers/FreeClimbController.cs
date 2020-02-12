@@ -17,11 +17,9 @@ namespace ReceiveMessage.Controllers {
         string acctToken = getAuthToken ();
         FreeClimbClient client = new FreeClimbClient (acctId, acctToken);
         string to = freeClimbRequest.getFrom;
-        string from = "+19159969243";
-        string appId = "APda384d410b8a6df51fc54ed1abdeaad380d627db";
+        string from = "";
         client.getMessagesRequester.create(from, to, "Hello from the C# SDK!");
        
-        // Convert PerCL container to JSON and append to response
         return Ok();
     }
 
