@@ -3,7 +3,6 @@ using com.freeclimb.percl;
 using com.freeclimb.webhooks.call;
 using System;
 using Microsoft.AspNetCore.Mvc;
-using com.freeclimb;
 using com.freeclimb.api;
 
 namespace ReceiveMessage.Controllers {
