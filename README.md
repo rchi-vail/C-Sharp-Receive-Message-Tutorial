@@ -1,6 +1,6 @@
 # C# - Receive a Message Tutorial
 
-This project serves as a guide to help you build an application with FreeClimb. View this tutorial on [FreeClimb.com](https://docs.freeclimb.com/docs/accept-an-incoming-call#section-c). Specifically, the project will:
+This project serves as a guide to help you build an application with FreeClimb. View this tutorial on [FreeClimb.com](https://docs.freeclimb.com/docs/how-to-receive-a-message#section-c). Specifically, the project will:
 
 -Receive and respond to an incoming SMS message
 
