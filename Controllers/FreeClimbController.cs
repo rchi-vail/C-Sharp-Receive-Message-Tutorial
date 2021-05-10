@@ -13,8 +13,8 @@ namespace ReceiveMessage.Controllers {
     [HttpPost]
     public ActionResult smsConnect (CallStatusCallback freeClimbRequest) {
         string acctId = getAcctId ();
-        string acctToken = getAuthToken ();
-        FreeClimbClient client = new FreeClimbClient (acctId, acctToken);
+        string apiKey = getApiKey ();
+        FreeClimbClient client = new FreeClimbClient (acctId, apiKey);
         string to = freeClimbRequest.getFrom;
         string from = "";
         client.getMessagesRequester.create(from, to, "Hello from the C# SDK!");
@@ -26,8 +26,8 @@ namespace ReceiveMessage.Controllers {
         return System.Environment.GetEnvironmentVariable("ACCOUNT_ID");
     }
 
-    private string getAuthToken () {
-        return System.Environment.GetEnvironmentVariable("AUTH_TOKEN");
+    private string getApiKey () {
+        return System.Environment.GetEnvironmentVariable("API_KEY");
     }
   }
 }

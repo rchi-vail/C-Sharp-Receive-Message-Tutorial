@@ -19,8 +19,8 @@ To get started using a FreeClimb account, follow the instructions [here](https:/
 
 | ENV VARIABLE | DESCRIPTION                                                                                                                              |
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| ACCOUNT_ID   | Account ID which can be found under [API Keys](https://www.freeclimb.com/dashboard/portal/account/authentication) in Dashboard           |
-| AUTH_TOKEN   | Authentication Token which can be found under [API Keys](https://www.freeclimb.com/dashboard/portal/account/authentication) in Dashboard |
+| ACCOUNT_ID   | Account ID which can be found under [API credentials](https://www.freeclimb.com/dashboard/portal/account/authentication) in Dashboard           |
+| API_KEY   | API key which can be found under [API credentials](https://www.freeclimb.com/dashboard/portal/account/authentication) in Dashboard |
 
 3. Provide a value for the variable `from` in FreeClimbController.cs. `from` is a FreeClimb number that makes the call ([Incoming Numbers](https://www.freeclimb.com/dashboard/portal/numbers)).
 
