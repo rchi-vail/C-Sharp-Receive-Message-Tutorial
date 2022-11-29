@@ -1,24 +1,25 @@
-﻿using com.freeclimb;
-using com.freeclimb.percl;
-using com.freeclimb.webhooks.call;
-using System;
+﻿using System;
 using Microsoft.AspNetCore.Mvc;
-using com.freeclimb.api;
+using freeclimb.Api;
+using freeclimb.Model;
 
 namespace ReceiveMessage.Controllers {
-  [Route ("inboundSms")]
+  [Route ("/")]
   [ApiController]
   public class FreeClimbController : ControllerBase {
 
     [HttpPost]
-    public ActionResult smsConnect (CallStatusCallback freeClimbRequest) {
+    public ActionResult smsConnect (CallResult freeClimbRequest) {
         string acctId = getAcctId ();
         string apiKey = getApiKey ();
         FreeClimbClient client = new FreeClimbClient (acctId, apiKey);
         string to = freeClimbRequest.getFrom;
-        string from = "";
+        string from = "+19809396134";
         client.getMessagesRequester.create(from, to, "Hello from the C# SDK!");
-       
+      
+        Console.WriteLine("to: "+to);
+        Console.WriteLine("from: "+from);
+
         return Ok();
     }
 
